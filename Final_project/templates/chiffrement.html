@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chiffrement Vidéo avec AES-128</title>
+    <style>
+        body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 50px;
+        background-color: #1d7f83;
+    }
+
+    h1 {
+        color: #333;
+    }
+    </style>
+</head>
+<body>
+    <h1>Vidéo Chiffrée avec Succès</h1>
+    <video controls>
+        <source src="{{ video_path }}.enc" type="video/mp4">
+    </video>
+    <p>Clé de Chiffrement : {{ key }}</p>
+</body>
+</html>

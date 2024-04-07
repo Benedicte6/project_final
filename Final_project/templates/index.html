@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Application de Chiffrement de Vidéos moyennant AES-128</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 50px;
+        background-color: #1d7f83;
+    }
+
+    h1 {
+        color: #333;
+    }
+
+    input[type="file"] {
+        margin: 20px;
+    }
+
+    button {
+        padding: 10px 20px;
+        background-color: #007bff;
+
+        cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <h1>Chiffrement de Vidéos avec AES-128</h1>
+    <form action="/chiffrement" method="post" enctype="multipart/form-data">
+        <input type="file" name="video" accept="video/*">
+        <button type="submit">Chiffrer la Vidéo</button>
+    </form>
+</body>
+</html>
